@@ -31,7 +31,7 @@ export const Burger = ({ burger, cart, setCart, burgers }) => {
             <ul>
 
                 <li id='name'>{name}</li>
-                <li>${price}</li>
+                <li id='price'>${price}</li>
                 {burgers ? (
                     <button type='button' onClick={() => addBurger(id)}>Add Car +</button>
 

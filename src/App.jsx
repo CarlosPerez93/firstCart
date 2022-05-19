@@ -10,6 +10,7 @@ import Bacon from "./img/Criolla.png"
 import Peasant from "./img/patagonia.png"
 import MrBurger from "./img/Porteña.png"
 import Special from "./img/Salteña.png"
+import { Drawer } from 'antd'
 
 function App() {
 
@@ -29,7 +30,9 @@ function App() {
 
   const handleShowCard = () => {
     setVisible(!visible)
+
   }
+
 
   return (
 
@@ -38,9 +41,9 @@ function App() {
         <div className='header'>
           <AiOutlineMenu />
           <h1>Hamburger</h1>
-          <div className='countCard'>
+          <div className='countCard' onClick={handleShowCard}>
             <p  >{cart.length}</p>
-            <FiShoppingCart onClick={handleShowCard} />
+            <FiShoppingCart />
           </div>
 
         </div>
@@ -65,8 +68,10 @@ function App() {
 
         <div className="footer">HAMBURGER2020 - Todos los derechos reservados</div>
 
+
       </div>
-      {/* <Cart cart={cart} setCart={setCart} visible={visible} setVisible={setVisible} /> */}
+      <Cart cart={cart} setCart={setCart} visible={!visible} setVisible={handleShowCard} />
+
     </Fragment >
 
 
