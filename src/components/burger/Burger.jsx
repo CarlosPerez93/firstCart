@@ -38,7 +38,7 @@ export const Burger = ({ burger, cart, setCart, burgers }) => {
                 ) : (
                     <>
                         <button type='button' onClick={() => addBurger(id)}>Confirm</button>
-                        <button type='button' onClick={() => delBurger(id)}>Delete</button>
+                        <button className='buttonDel' type='button' onClick={() => delBurger(id)}>Delete</button>
                     </>
 
                 )}
