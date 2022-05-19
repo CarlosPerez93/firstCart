@@ -1,0 +1,65 @@
+.main_burger {
+  background: rgba(94, 94, 94, 0.719);
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: static;
+  :hover {
+    animation: gt 5s linear;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  ul {
+    padding: 0 0 0;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+
+    #name {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    }
+  }
+  button {
+    background: yellow;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+}
+
+@keyframes bk {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gt {
+  0% {
+    margin-top: 5px;
+    /*margin-left: 0px;*/
+  }
+  25% {
+    margin-top: 10px;
+    /*margin-left: 10px;*/
+  }
+  50% {
+    margin-top: 15px;
+    /*margin-left: 20px;*/
+  }
+  75% {
+    margin-top: 20px;
+    /*margin-left: 10px;*/
+  }
+  100% {
+    margin-top: 25px;
+    /*margin-left: 0px;*/
+  }
+}

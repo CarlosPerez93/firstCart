@@ -1,6 +1,6 @@
 import React from 'react'
 import { Burger } from '../burger/Burger'
-import './Cart.scss'
+// import './Cart.scss'
 
 
 export const Cart = ({ cart, setCart }) => {

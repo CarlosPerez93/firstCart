@@ -4,7 +4,7 @@ export const Burger = ({ burger, cart, setCart, burgers }) => {
 
 
     //save const state props
-    const { name, price, id } = burger;
+    const { image, name, price, id } = burger;
 
     //add burguers
     const addBurger = id => {
@@ -25,14 +25,15 @@ export const Burger = ({ burger, cart, setCart, burgers }) => {
 
     return (
 
-        <div>
-            <h3>Burgers</h3>
+        <div className='main_burger'>
 
+            <img src={image} />
             <ul>
-                <li>{name}</li>
+
+                <li id='name'>{name}</li>
                 <li>${price}</li>
                 {burgers ? (
-                    <button type='button' onClick={() => addBurger(id)}>Add Car</button>
+                    <button type='button' onClick={() => addBurger(id)}>Add Car +</button>
 
                 ) : (
                     <>
